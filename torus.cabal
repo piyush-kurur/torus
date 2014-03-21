@@ -1,0 +1,21 @@
+name:    torus
+version: 0.1.0.0
+
+synopsis: The dependently typed language torus
+
+description: Torus is a dependently typed language that uses Homotopic
+  type theory as its underlying type theory.
+
+license:      BSD3
+license-file: LICENSE
+
+author:       Piyush P Kurur
+maintainer:   ppk@cse.iitk.ac.in
+
+category:      Language
+build-type:    Simple
+cabal-version: >=1.9.2
+
+library
+  build-depends: base                   >= 4.5.0   &&   < 4.6
+  ghc-options: -Wall
