@@ -3,6 +3,8 @@ ghc:
   - 7.6
   - 7.4
 script:
-  - cabal configure --enable-test --enable-documentation
+  - cabal configure --enable-tests
   - cabal build
   - cabal test
+  - cabal install --enable-tests --enable-documentation
+  - cabal sdist
